@@ -1,0 +1,475 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:27 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Mon May 15 09:51:34 2017
+# Process ID: 11200
+# Current directory: C:/Users/Umay/Desktop/Pong/project_1.runs/synth_1
+# Command line: vivado.exe -log topModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topModule.tcl
+# Log file: C:/Users/Umay/Desktop/Pong/project_1.runs/synth_1/topModule.vds
+# Journal file: C:/Users/Umay/Desktop/Pong/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source topModule.tcl -notrace
+Command: synth_design -top topModule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14204 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 319.586 ; gain = 110.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topModule' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:54]
+INFO: [Synth 8-3491] module 'graph' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:34' bound to instance 'U1' of component 'graph' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:133]
+INFO: [Synth 8-638] synthesizing module 'graph' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:51]
+INFO: [Synth 8-4471] merging register 'green_reg[3:0]' into 'red_reg[3:0]' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:88]
+INFO: [Synth 8-4471] merging register 'blue_reg[3:0]' into 'red_reg[3:0]' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'graph' (1#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:51]
+INFO: [Synth 8-3491] module 'scorecond' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/scorecond.vhd:35' bound to instance 'U2' of component 'scorecond' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'scorecond' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/scorecond.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'scorecond' (2#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/scorecond.vhd:46]
+INFO: [Synth 8-3491] module 'ssgModule' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/ssgModule.vhd:26' bound to instance 'U3' of component 'ssgModule' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'ssgModule' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/ssgModule.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ssgModule' (3#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/ssgModule.vhd:37]
+INFO: [Synth 8-3491] module 'ClockDivider400Hz' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/clockDivider400Hz.vhd:34' bound to instance 'U4' of component 'clockDivider400Hz' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'ClockDivider400Hz' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/clockDivider400Hz.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'ClockDivider400Hz' (4#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/clockDivider400Hz.vhd:39]
+INFO: [Synth 8-3491] module 'anodeSsg' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/anodeSsg.vhd:36' bound to instance 'U5' of component 'anodeSsg' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'anodeSsg' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/anodeSsg.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'anodeSsg' (5#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/anodeSsg.vhd:46]
+INFO: [Synth 8-3491] module 'clockDivider25MHz' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/clockDivider25MHz.vhd:25' bound to instance 'U6' of component 'clockDivider25MHz' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'clockDivider25MHz' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/clockDivider25MHz.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'clockDivider25MHz' (6#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/clockDivider25MHz.vhd:31]
+INFO: [Synth 8-3491] module 'levelCreation' declared at 'C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/levelCreation.vhd:34' bound to instance 'U7' of component 'levelCreation' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'levelCreation' [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/levelCreation.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'levelCreation' (7#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/levelCreation.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'topModule' (8#1) [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/vga.vhd:54]
+WARNING: [Synth 8-3331] design scorecond has unconnected port clockin
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 357.844 ; gain = 148.520
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 357.844 ; gain = 148.520
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Umay/Desktop/Pong/project_1.srcs/constrs_1/new/constraint.xdc]
+Finished Parsing XDC File [C:/Users/Umay/Desktop/Pong/project_1.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Umay/Desktop/Pong/project_1.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topModule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topModule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 652.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:86]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:86]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:86]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:86]
+INFO: [Synth 8-41] '_-' operator could not be merged with '+' operator due to loss of accuracy [C:/Users/Umay/Desktop/Pong/project_1.srcs/sources_1/new/graph.vhd:86]
+INFO: [Synth 8-5546] ROM "barClock" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "barClock" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ballmoveY" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "temporary" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "temporal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 17    
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     18 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 69    
+	   5 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module graph 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 17    
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   9 Input      1 Bit        Muxes := 1     
+Module scorecond 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+Module ssgModule 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	                4 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module ClockDivider400Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module anodeSsg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      7 Bit        Muxes := 69    
+	   5 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+Module clockDivider25MHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module levelCreation 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "barClock" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U4/temporary" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "U6/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "U6/temporal" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design scorecond has unconnected port clockin
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/ballmoveY_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveY_reg[1]' (FDSE) to 'U1/ballmoveY_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveY_reg[2]' (FDSE) to 'U1/ballmoveY_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveY_reg[3]' (FDSE) to 'U1/ballmoveY_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveY_reg[4]' (FDSE) to 'U1/ballmoveY_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveY_reg[5]' (FDSE) to 'U1/ballmoveY_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveY_reg[6]' (FDSE) to 'U1/ballmoveY_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U1/ballmoveX_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveX_reg[1]' (FDSE) to 'U1/ballmoveX_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveX_reg[2]' (FDSE) to 'U1/ballmoveX_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveX_reg[3]' (FDSE) to 'U1/ballmoveX_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveX_reg[4]' (FDSE) to 'U1/ballmoveX_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveX_reg[5]' (FDSE) to 'U1/ballmoveX_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U1/ballmoveX_reg[6]' (FDSE) to 'U1/ballmoveX_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U1/red_reg[0]' (FDR) to 'U1/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U1/red_reg[1]' (FDR) to 'U1/red_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U1/red_reg[2]' (FDR) to 'U1/red_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (U1/ballmoveX_reg[0]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U1/ballmoveY_reg[0]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[0]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[1]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[2]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[3]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[4]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[5]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[6]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[7]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[8]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[9]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[10]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[11]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[12]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[13]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[14]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[15]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[16]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[17]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[18]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[19]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[20]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[21]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[22]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[23]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[24]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[25]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[26]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[27]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[28]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[29]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[30]) is unused and will be removed from module topModule.
+WARNING: [Synth 8-3332] Sequential element (U3/tscore2_reg[31]) is unused and will be removed from module topModule.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 652.719 ; gain = 443.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   149|
+|3     |LUT1   |   250|
+|4     |LUT2   |   252|
+|5     |LUT3   |   141|
+|6     |LUT4   |   170|
+|7     |LUT5   |    84|
+|8     |LUT6   |   173|
+|9     |MUXF7  |     1|
+|10    |FDRE   |   240|
+|11    |FDSE   |     9|
+|12    |IBUF   |     7|
+|13    |OBUF   |    25|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+------------------+------+
+|      |Instance |Module            |Cells |
++------+---------+------------------+------+
+|1     |top      |                  |  1504|
+|2     |  U1     |graph             |   953|
+|3     |  U2     |scorecond         |    20|
+|4     |  U3     |ssgModule         |   330|
+|5     |  U4     |ClockDivider400Hz |    48|
+|6     |  U5     |anodeSsg          |    23|
+|7     |  U6     |clockDivider25MHz |    83|
+|8     |  U7     |levelCreation     |    12|
++------+---------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 654.898 ; gain = 114.348
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 654.898 ; gain = 445.574
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 156 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+77 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 654.898 ; gain = 418.078
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Umay/Desktop/Pong/project_1.runs/synth_1/topModule.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 654.898 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May 15 09:52:14 2017...

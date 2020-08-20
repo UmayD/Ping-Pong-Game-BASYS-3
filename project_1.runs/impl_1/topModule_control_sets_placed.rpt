@@ -1,0 +1,91 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.3 (win64) Build 1682563 Mon Oct 10 19:07:27 MDT 2016
+| Date         : Mon May 15 09:52:51 2017
+| Host         : DESKTOP-UP4LE4L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file topModule_control_sets_placed.rpt
+| Design       : topModule
+| Device       : xc7a35t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    24 |
+| Unused register locations in slices containing registers |   100 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              49 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             124 |           39 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              87 |           30 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------+----------------------+------------------+----------------+
+|      Clock Signal      |     Enable Signal    |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++------------------------+----------------------+----------------------+------------------+----------------+
+|  clk25MHz_BUFG         |                      | U1/horizon0          |                1 |              1 |
+|  clk25MHz_BUFG         |                      | U1/vertical0         |                1 |              1 |
+|  U4/CLK                | U3/E[0]              | U3/segment_reg[0][0] |                1 |              1 |
+|  clk25MHz_BUFG         |                      |                      |                2 |              2 |
+|  U4/CLK                | U3/E[2]              | U3/segment_reg[0][1] |                1 |              2 |
+|  clockin_IBUF_BUFG     | U3/a1tmp             | U3/a2tmp[0]_i_1_n_0  |                2 |              4 |
+|  clockin_IBUF_BUFG     | U1/tscore10          | U3/a1tmp[0]_i_1_n_0  |                1 |              4 |
+|  clockin_IBUF_BUFG     | U1/a3tmp_reg[0]_3[0] | U1/SR[0]             |                1 |              4 |
+|  clockin_IBUF_BUFG     | U1/E[0]              | U3/a4tmp[0]_i_1_n_0  |                1 |              4 |
+|  U4/CLK                | U3/E[1]              | U3/segment_reg[0][2] |                3 |              4 |
+|  clockin_IBUF_BUFG     |                      |                      |                6 |              6 |
+|  U4/CLK                |                      |                      |                2 |              6 |
+|  clk25MHz_BUFG         |                      | U1/pixelx[9]_i_1_n_0 |                4 |             10 |
+|  clk25MHz_BUFG         | U1/pixelx[9]_i_1_n_0 | U1/pixely            |                4 |             10 |
+|  bar2Y_reg[10]_i_2_n_0 |                      |                      |                8 |             11 |
+|  bar2Y_reg[10]_i_2_n_0 | U1/tbarX[10]_i_1_n_0 | U1/tbarX_1           |                4 |             11 |
+|  bar2Y_reg[10]_i_2_n_0 | U1/tbarY_0           | U1/tbarX_1           |                4 |             11 |
+|  clk25MHz_BUFG         |                      | U1/red[3]_i_1_n_0    |                6 |             12 |
+|  clockin_IBUF_BUFG     |                      | U4/temporary         |                5 |             17 |
+|  clk25MHz_BUFG         |                      | U1/barClock          |                6 |             20 |
+|  U1/ballClock          |                      |                      |               10 |             24 |
+|  clockin_IBUF_BUFG     |                      | U6/temporal          |                8 |             31 |
+|  clk25MHz_BUFG         |                      | U1/clear             |                8 |             32 |
+|  clockin_IBUF_BUFG     | U1/tscore10          | resetSwitch_IBUF     |                8 |             32 |
++------------------------+----------------------+----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     3 |
+| 2      |                     2 |
+| 4      |                     5 |
+| 6      |                     2 |
+| 10     |                     2 |
+| 11     |                     3 |
+| 12     |                     1 |
+| 16+    |                     6 |
++--------+-----------------------+
+
+
